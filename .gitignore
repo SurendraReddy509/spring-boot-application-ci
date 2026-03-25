@@ -1,45 +1,63 @@
+# -----------------------------
 # Sensitive files
+# -----------------------------
 **/*.pem
 **/*.key
 **/*.crt
 **/*.csv
 
+# -----------------------------
 # OS files
+# -----------------------------
 .DS_Store
 Thumbs.db
 Desktop.ini
 
+# -----------------------------
 # Node
+# -----------------------------
 **/node_modules/
 
+# -----------------------------
 # Python
+# -----------------------------
 **/venv/
 **/.venv/
 __pycache__/
 *.pyc
 
+# -----------------------------
 # Java / Spring Boot
+# -----------------------------
 **/target/
 **/build/
 **/.gradle/
 *.class
 
-# ✅ IMPORTANT: Allow JAR for Docker
-!docker/app1-hello/springboot/hello-spring/target/
-!docker/app1-hello/springboot/hello-spring/target/*.jar
+# ✅ IMPORTANT: allow JAR for Docker build (relative to context)
+!target/
+!target/*.jar
 
+# -----------------------------
 # Logs
+# -----------------------------
 **/*.log
 
-# Env files
+# -----------------------------
+# Environment files
+# -----------------------------
 *.env
 *.env.*
 
-# IDE
+# -----------------------------
+# IDE files
+# -----------------------------
 **/.vscode/
 **/.idea/
 
-# Misc
+# -----------------------------
+# Misc binaries
+# -----------------------------
 *.o
 *.so
 *.dll
