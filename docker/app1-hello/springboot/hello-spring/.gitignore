@@ -1,33 +1,64 @@
-HELP.md
-target/
-.mvn/wrapper/maven-wrapper.jar
-!**/src/main/**/target/
-!**/src/test/**/target/
+# -----------------------------
+# Sensitive files
+# -----------------------------
+**/*.pem
+**/*.key
+**/*.crt
+**/*.csv
 
-### STS ###
-.apt_generated
-.classpath
-.factorypath
-.project
-.settings
-.springBeans
-.sts4-cache
+# -----------------------------
+# OS files
+# -----------------------------
+.DS_Store
+Thumbs.db
+Desktop.ini
 
-### IntelliJ IDEA ###
-.idea
-*.iws
-*.iml
-*.ipr
+# -----------------------------
+# Node
+# -----------------------------
+**/node_modules/
 
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
-build/
-!**/src/main/**/build/
-!**/src/test/**/build/
+# -----------------------------
+# Python
+# -----------------------------
+**/venv/
+**/.venv/
+__pycache__/
+*.pyc
 
-### VS Code ###
-.vscode/
+# -----------------------------
+# Java / Spring Boot
+# -----------------------------
+**/target/
+**/build/
+**/.gradle/
+*.class
+
+# ✅ IMPORTANT: allow JAR for Docker build (relative to context)
+!target/
+!target/*.jar
+
+# -----------------------------
+# Logs
+# -----------------------------
+**/*.log
+
+# -----------------------------
+# Environment files
+# -----------------------------
+*.env
+*.env.*
+
+# -----------------------------
+# IDE files
+# -----------------------------
+**/.vscode/
+**/.idea/
+
+# -----------------------------
+# Misc binaries
+# -----------------------------
+*.o
+*.so
+*.dll
+*.exe
